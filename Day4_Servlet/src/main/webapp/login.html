@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Employee Login</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background: linear-gradient(to right, #36d1dc, #5b86e5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.login-container {
+	background-color: #ffffff;
+	padding: 30px;
+	border-radius: 10px;
+	width: 350px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+input {
+	width: 100%;
+	padding: 8px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 14px;
+}
+
+input:focus {
+	border-color: #5b86e5;
+	outline: none;
+}
+
+.btn {
+	width: 100%;
+	padding: 10px;
+	background-color: #5b86e5;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #3f6ad8;
+}
+
+.extra-links {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.extra-links a {
+	text-decoration: none;
+	color: #5b86e5;
+}
+
+.extra-links a:hover {
+	text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+	<div class="login-container">
+		<h2>Employee Login</h2>
+		<form action="login" method="post">
+
+			<div class="form-group">
+				<label for="email">Email ID</label> <input type="email" id="email"
+					name="email" placeholder="Enter your email" required>
+			</div>
+
+			<div class="form-group">
+				<label for="password">Password</label> <input type="password"
+					id="password" name="password" placeholder="Enter your password"
+					required>
+			</div>
+
+			<button type="submit" class="btn">Login</button>
+
+			<div class="extra-links">
+				<p>
+					<a href="#">Forgot Password?</a>
+				</p>
+			</div>
+
+		</form>
+	</div>
+
+</body>
+</html>
